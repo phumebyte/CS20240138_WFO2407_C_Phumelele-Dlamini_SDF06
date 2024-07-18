@@ -38,15 +38,31 @@ header .img {
     height: 100px;
 }
 
-.gallery-item {
-
-}
-
 .profile {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.profile-information {
+    display: flex;
+    flex-direction: column;
+}
+
+/* GALLERY GRID SECTION */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/*
+.gallery-item {
+
+} */
+
+/* LOADER SECTION */
 
 .loader {
     border: 5px solid #f3f3f3;
@@ -71,8 +87,3 @@ header .img {
     }
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
