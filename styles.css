@@ -20,28 +20,33 @@ body {
 
 img {
     display: inline;
-    width: 200px;
-    height: 300px;
+    width: 100px;
+    height: 200px;
 }
 
 .profile-image {
     width: 170px;
     height: 170px;
     box-sizing: border-box;
-    border: 5px solid cadetblue;
+    border: 8px solid cadetblue;
     border-radius: 50%;
     overflow: hidden;
 }
 
 header .img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 200px;
 }
 
 .profile {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
+}
+
+.profile-user-name {
+    display: inline;
 }
 
 .profile-information {
@@ -49,7 +54,26 @@ header .img {
     flex-direction: column;
 }
 
+.profile-user-settings {
+    display: inline;
+}
+
+.profile-stats ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.profile-stats li {
+    margin-right: 30px;
+    font-weight: 600;
+}
+
 /* GALLERY GRID SECTION */
+
+main .container {
+    margin-top: 30px;
+}
 
 .gallery {
     display: grid;
