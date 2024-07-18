@@ -39,7 +39,7 @@ header .img {
 }
 
 .gallery-item {
-    overflow: hidden;
+
 }
 
 .profile {
@@ -54,9 +54,12 @@ header .img {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    margin: 60px;
 
     animation: spinning-loader 0.5s linear infinite;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes spinning-loader {
