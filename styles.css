@@ -22,6 +22,20 @@ img {
     display: block;
 }
 
+.profile-image {
+    width: 170px;
+    height: 170px;
+    box-sizing: border-box;
+    border: 5px solid cadetblue;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+header .img {
+    width: 100px;
+    height: 100px;
+}
+
 .profile {
     display: flex;
     justify-content: center;
