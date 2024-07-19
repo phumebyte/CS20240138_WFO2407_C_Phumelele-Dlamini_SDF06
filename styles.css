@@ -116,7 +116,7 @@ main .container {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 200px;
     gap: 10px;
 }
 
@@ -129,6 +129,10 @@ main .container {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.gallery-item:first-child , .gallery-item:nth-child(2), .gallery-item:nth-child(3) {
+    grid-row: span 2;
 }
 
 .gallery-item-info {
