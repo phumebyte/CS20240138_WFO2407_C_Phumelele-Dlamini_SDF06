@@ -42,7 +42,7 @@ header .img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    margin-right: 20px;
     margin-top: 30px;
 }
 
@@ -107,7 +107,7 @@ header .img {
 
 main .container {
     margin-top: 30px;
-    max-width: 45%;
+    max-width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -154,6 +154,15 @@ main .container {
     transition: opacity 0.01s ease-in-out;
 }
 
+.gallery-item-info .icon {
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+.gallery-item-info .text {
+    display: none; /* trying to hide text */
+}
+
 /* HOVER FUNCTION*/
 
 .gallery-item:hover .gallery-item-info {
@@ -165,6 +174,10 @@ main .container {
 
 .gallery-item-info span {
     display: none;   /* attempting to hide the text and show icons only */
+}
+
+.gallery-item:hover .gallery-item-info .text {
+    display: none; /* making text stay hidden on hover */
 }
 
 /* LOADER SECTION */
