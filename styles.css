@@ -126,6 +126,17 @@ main .container {
     object-fit: cover;
 }
 
+.gallery-item-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* HOVER FUNCTION*/
+.gallery-item:hover .gallery-item-info {
+    opacity: 1;
+}
+
 /* LOADER SECTION */
 
 .loader {
