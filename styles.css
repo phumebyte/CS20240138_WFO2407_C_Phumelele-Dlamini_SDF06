@@ -45,28 +45,35 @@ header .img {
     margin-left: 30px;
 }
 
-.profile-user-name {
-    display: inline; /* can't aline other elements if its a block element  */
-}
-
 .profile-information {
     display: flex;
     flex-direction: column;
 }
 
 .profile-user-name {
-    font-weight: light;
-    color: grey;
+    display: inline; /* can't aline other elements if its a block element  */
+}
+
+.profile-user-name {
+    font-weight: lighter;
+    color: gray;
     font-size: 30px;
     margin-right: 10px;
     font-family: "Open Sans", Arial, sans-serif;
 }
 
-.btn-profile-edit-button {
-    background-color: none;
-    margin-right: 20px;
-    margin-left: 10px;
-    border: 3px solid #262626;
+.btn-profile-edit-btn {
+    background-color: white;
+    border: 1px solid #262626;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-profile-settings-btn {
+    background-color: white;
+    border: none;
+    margin-left: 5px;
 }
 
 .profile-user-settings {
@@ -82,12 +89,12 @@ header .img {
 .profile-stats {
     margin: 20px;
     font-size: 10px;
-    color: grey; 
+    color: #262626; 
+    font-weight: 600;
 }
 
 .profile-stats li {
     margin-right: 20px;
-    font-weight: 600;
 }
 
 .profile-bio {
