@@ -56,34 +56,32 @@ header .img {
 }
 
 .profile-user-name {
-    font-weight: lighter;
+    font-weight: 200;
     color: gray;
     font-size: 30px;
     margin-right: 10px;
-    font-family: "Open Sans", Arial, sans-serif;
 }
 
 .btn-profile-edit-btn {
     background-color: white;
     border: 1px solid #262626;
     font-size: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .btn-profile-settings-btn {
     background-color: white;
     border: none;
-    margin-left: 5px;
 }
 
 .profile-user-settings {
-    display: inline;
+    display: inline;  /* also needs to be an inline element */
 }
 
 .profile-stats ul {
     display: flex;
-    list-style: none;
+    list-style: none;  /*removes the list dots */
     padding: 0;
 }
 
@@ -108,7 +106,7 @@ header .img {
 main .container {
     margin-top: 30px;
     max-width: 40%;
-    display: block;
+    display: block;  /*centering the main container*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -116,7 +114,7 @@ main .container {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
+    grid-auto-rows: 200px;   /*set default height size on grid to 200px*/
     gap: 10px;
 }
 
@@ -132,7 +130,7 @@ main .container {
 }
 
 .gallery-item:first-child , .gallery-item:nth-child(2), .gallery-item:nth-child(3) {
-    grid-row: span 2;
+    grid-row: span 2;   /*targeting the first 3 images to be longer than the rest */
 }
 
 .gallery-item-info {
@@ -141,7 +139,6 @@ main .container {
     align-items: center;
     position: absolute;
     background-color: rgba(0,0,0,0.5);
-    color: rgba(128, 128, 128, 0.5);
     font-size: 10px;
     top: 0;
     bottom: 0;
@@ -168,7 +165,7 @@ main .container {
 }
 
 .gallery-item-info .fa {   /* referring to the fa fa comment and like icon on the HTML   */
-    font-size: 25px;     
+    font-size: 15px;     
     margin-right: 5px;
 }
 
@@ -199,8 +196,8 @@ main .container {
     border: 5px solid #f3f3f3;
     border-top: 5px solid cadetblue;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin-top: 30px;
 
     animation: spinning-loader 0.5s linear infinite;
