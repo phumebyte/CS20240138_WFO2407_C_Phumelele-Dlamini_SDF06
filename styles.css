@@ -79,12 +79,19 @@ main .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
 }
 
-/*
 .gallery-item {
+    overflow: hidden;
+    position: relative;
+}
 
-} */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* LOADER SECTION */
 
@@ -94,6 +101,7 @@ main .container {
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    margin-top: 30px;
 
     animation: spinning-loader 0.5s linear infinite;
 
