@@ -154,9 +154,22 @@ main .container {
     transition: opacity 0.01s ease-in-out;
 }
 
-.gallery-item-info .icon {
-    font-size: 25px;
+.gallery-item-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.gallery-item-info li {
+    display: flex;
+    align-items: center;
     margin: 0 5px;
+}
+
+.gallery-item-info .fa {   /* referring to the fa fa comment and like icon on the HTML   */
+    font-size: 25px;     
+    margin-right: 5px;
 }
 
 .gallery-item-info .text {
